@@ -83,14 +83,14 @@
             </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
         </div>
-        <div>
-            <div class="circleProgress_wrapper">
-                <div id="slice_wrapper" class="slice">
-                    <div class="bar pre50"></div>
-                    <div class="fill"></div>
-                </div>
+
+        <div class="circleProgress_wrapper">
+            <div id="slice_wrapper" class="slice">
+                <div class="bar pre50"></div>
+                <div class="fill"></div>
             </div>
         </div>
+
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div id="huxblog_navbar">
@@ -140,7 +140,16 @@
     });
     circleProgress.addEventListener("click",function(){
         if(audio.getAttr("paused")){
-            audio.play()
+            var playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // 这个时候可以安全的暂停
+                    audio.pause();
+                })
+                    .catch(error => {
+
+                    });
+            }
         }else{
             audio.pause()
         }
