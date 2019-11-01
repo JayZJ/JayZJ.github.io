@@ -5,7 +5,7 @@ header-img: img/post-bg-desk.jpg
 email: hujie1015111@gmail.com
 description: "Every failure is leading towards success."
 keyword: "HJ, HJ Blog, Jay的博客"
-url: "http://jayzj.github.io"          # your host, for absolute URL
+url: "https://jayzj.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/JayZJ/JayZJ.github.io.git" # you code repository
 
