@@ -12,7 +12,7 @@ github_repo: "https://github.com/JayZJ/JayZJ.github.io.git" # you code repositor
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Talk is cheap show me the code!"
-sidebar-avatar: /img/about-hehe-header.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://jayzj.github.io/img/about-hehe-header.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
