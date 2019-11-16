@@ -13,7 +13,15 @@ tags:
 
 >jstack 命令。
 
-@[TOC](jstack 命令查看JAVA线程堆栈)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [JAVA堆栈信息](#java%E5%A0%86%E6%A0%88%E4%BF%A1%E6%81%AF)
+- [jps -lvm](#jps--lvm)
+- [jstack -l pid](#jstack--l-pid)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ### JAVA堆栈信息
 实际生产中，可能由于开发以及测试未能全面覆盖的代码质量、性能问题，而引致线程挂起甚至崩溃。可能就需要查看堆栈信息来排查问题了。
 ### jps -lvm
